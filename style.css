@@ -1,0 +1,148 @@
+*
+{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+body
+{
+      background-image: url(jewellery.jpg);
+      background-size: cover;
+      background-position: center;
+      font-family: sans-serif;
+}
+.menu-bar
+{
+      background:burlywood;
+      text-align: center;
+} 
+.menu-bar ul
+{
+      display: inline-flex;
+      list-style: none;
+      color: peachpuff;
+
+}
+.menu-bar ul li
+{
+      width: 120px;
+      margin: 15px ;
+      padding: 15px ;
+      
+}
+.menu-bar ul li a
+{
+      text-decoration: none;
+      color: antiquewhite;
+      
+}
+.active, .menu-bar ul li:hover
+{
+      background: rgb(brown);
+      border-radius: 3px;
+
+}
+.menu-bar.fa
+{
+      margin-right: 8px;
+}
+.sub-menu-1
+{
+      display: none;
+
+}
+.menu-bar ul li:hover  .sub-menu-1
+{
+      display: block;
+      position: absolute;
+      background: peru;
+      margin-top: 15px;
+      margin-left: -15px ;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul
+{
+      display:block;
+      margin: 10px;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li
+{
+      width: 150px;
+      padding: 10px;
+      border-bottom: 1px dotted #fff;
+      background: transparent;
+      border-radius: 0 ;
+      text-align: left;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li:last-child
+{
+      border-bottom: none;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li a:hover
+{
+      color:purple;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Oswald&display=swap');
+*
+{
+      box-sizing: border-box;
+}
+*, *::after , *::before
+{
+      box-sizing: border-box;
+}
+
+html,
+body{
+      height: 100%;
+}
+body{
+      line-height: 24px;
+      font-size: 14px;
+      font-style:normal ;
+      font-weight: 400;
+      visibility: visible;
+      font-family: "'Open Sans', sans-serif";
+      color: #5a5a5a;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+      font-weight:400 ;
+      margin-top: 0;
+      font-family:'Open Sans', sans-serif; ;
+}
+h1 {
+      font-size: 48px;
+      line-height:1 ;
+      font-weight: 700;
+}
+h2 {
+      font-size: 38px;
+      line-height:38px ;
+      
+}
+h3 {
+      font-size: 36px;
+      line-height:36;
+      
+}
+h4 {
+      font-size: 16px;
+      line-height:16 ;
+      
+}h5 {
+      font-size: 14px;
+      line-height:14 ;
+      
+}
+h6 {
+      font-size: 12px;
+      line-height:12 ;
+      
+}
