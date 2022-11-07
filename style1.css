@@ -7,7 +7,7 @@
 .banner{
       width:100% ;
       height: 100vh;
-      background-image:url(jewellery.jpg);
+      background-image:url(IMAGE/jewellery.jpg);
       opacity: 0.9;
       background-size: cover;
       background-position: center;
