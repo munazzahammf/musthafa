@@ -1,54 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
 
-  <!-- Bootstrap Styles -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Musthafa - Home</title>
 
-  <title>Musthafa - Home</title>
-
-  <!-- Custom Style Sheets -->
-  <link rel="stylesheet" href="css/style1.css" />
+    <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body class="bg-light">
-  <nav>
-    <img src="img/logo.jpg" alt="logo">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="#">Jewellery</a></li>
-      <li><a href="#">Watches</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="contact-us.html">Contact us</a></li>
-    </ul>
-  </nav>
+<body>
+    <nav class="shadow-sm">
+        <img src="img/logo.jpg" alt="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#jewellery">Jewellery</a></li>
+            <li><a href="#">Watches</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#contact-us">Contact us</a></li>
+        </ul>
+    </nav>
 
-  <section class="sec-banner mb-5">
-    <div class="image-container">
-      <img src="img/phto5.jpg" alt="Jewellery image" class="jewellery-image">
-    </div>
-    <div class="text-container">
-      <div class="text-wrapper">
-        <h1> YOUR WEDDING <br> YOUR STYLE </h1>
-        <h2> Be Your Own Kind Of Beautiful....</h2>
-
-        <div>
-          <button type="button"><span></span>SHOP NOW</button>
+    <section class="thumbnail container-fluid p-5">
+        <div class="row">
+            <div class="col-5 image-container position-relative">
+                <img src="img/phto5.jpg" alt="Jewellery image" class="jewellery-image w-100 h-100 position-relative">
+            </div>
+            <div class="text-container col-7">
+                <div class="text-wrapper">
+                    <h1> YOUR <span class="text-highlight">WEDDING</span> <br> YOUR <span
+                            class="text-highlight">STYLE</span>
+                    </h1>
+                    <h2 class="pb-3"> Be Your Own Kind Of Beautiful....</h2>
+                    <div>
+                        <button class="general-button py-2 fs-5 px-5 fw-bold text-white">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Section Jewellery -->
+    <section class="py-5" id="jewellery">
+        <h1 class="text-center">JEWELLERY</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/Bracelets1.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text px-1">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Bangles (Stones)
+                                </div>
+                                <div class="price">
+                                    10.40 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/Nacklaces1.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text px-1">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Necklace (Stones)
+                                </div>
+                                <div class="price">
+                                    24.95 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    18 Kt ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/earing1.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Awesome Earing
+                                </div>
+                                <div class="price">
+                                    4.40 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt Gold ･Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/ring2.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Engagement Ring
+                                </div>
+                                <div class="price">
+                                    12.04 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt Gold ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/ring7.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Engagement Ring
+                                </div>
+                                <div class="price">
+                                    20.60 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt Gold ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/Nacklaces2.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Necklace (Stones)
+                                </div>
+                                <div class="price">
+                                    16.49 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt Gold ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/pendant.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Pendants
+                                </div>
+                                <div class="price">
+                                    8.89 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt Gold ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+                    <div class="tile-jewellery py-3 px-2">
+                        <div class="container-img position-relative mb-3" style="min-height: 250px;">
+                            <img src="img/earing2.jpg" alt="jewellery image" style="object-fit: cover;"
+                                class="h-100 w-100 position-absolute rounded">
+                            <div class="container-like-icon position-absolute w-100 h-100">
+                                <i
+                                    class="fa-regular fa-heart position-absolute bottom-0 end-0 text-white mb-2 me-2 fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="container-text">
+                            <div class="text-row d-flex pb-1 justify-content-between">
+                                <div class="item-name">
+                                    Necklace (Stones)
+                                </div>
+                                <div class="price">
+                                    16.49 g
+                                </div>
+                            </div>
+                            <div class="text-secondary">
+                                <small>
+                                    22 Kt Gold ･ Yellow Gold
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact Us -->
+    <section class="contact-us p-5" id="contact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-5">
+                    <h1>Connect With Us</h1>
+                    <p class="text-secondary">
+                        We would love to respond to your queries and help you succeed. free to get in touch with us.
+                    </p>
+                    <div>
+                        <h3 class="pb-1">Reach Us Via</h3>
+                        <table class="fs-6 text-secondary mb-3">
+                            <tbody>
+                                <tr>
+                                    <td class="text-highlight"><i class="fa-solid fa-location-dot"></i></td>
+                                    <td>No:99, Bazaar Street, Chilaw.</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-highlight"><i class="fa-solid fa-envelope"></i></td>
+                                    <td><a href="mailto:connectwithus@example.com">connectwithus@example.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-highlight"><i class="fa-solid fa-phone"></i></td>
+                                    <td><a href="tel:+94-77882-4678">+94778824678</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="container social-icons g-0">
+                            <ul class="list-inline g-0 fs-4 d-flex justify-content-start">
+                                <li>
+                                    <a href="https://www.facebook.com/musthafajewellers">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/musthafajewellers/">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.tiktok.com/@musthafajewellers">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://twitter.com">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin-com">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="contact-left">
+                        <h3>Send Your Request</h3>
+
+                        <form>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="M.M.M.Musthak" />
+                                </div>
+
+                                <div class="input-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" placeholder="+94778824678" />
+                                </div>
+                            </div>
+
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="musthafa@gmail.com" />
+                                </div>
+
+                                <div class="input-group">
+                                    <label>Subject</label>
+                                    <input type="text" placeholder="Product demo" />
+                                </div>
+                            </div>
+
+                            <label>Message</label>
+                            <textarea rows="5" placeholder="Your Message"></textarea>
+
+                            <button type="submit" class="general-button py-1 fs-5 px-5 fw-bold">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-  </header>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a9b8a8cd22.js" crossorigin="anonymous"></script>
 </body>
 </html>
