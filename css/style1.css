@@ -5,7 +5,7 @@
 }
 
 :root {
-      --font-color: rgb(45, 3, 3);
+      --font-color: #6F233F;
 }
 
 .banner {
@@ -21,7 +21,7 @@ nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #e6e6e6;
+      background-color: #ECD4EA;
 }
 
 .logo {
@@ -74,7 +74,7 @@ nav ul li:hover::after {
       top: 50%;
       transform: translateY(-50%);
       text-align: left;
-      color: wheat;
+      color: #ECD4EA;
 }
 
 .content h6 {
@@ -129,7 +129,7 @@ nav>img {
 }
 
 .sec-banner {
-      background-color: #e6e6e6;
+      background-color: #ECD4EA;
       display: flex;
       margin: 0 10%;
       height: 50rem;

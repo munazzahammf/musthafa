@@ -1,5 +1,5 @@
 body{
-      background: rgb(65, 4, 4);
+      background: #693B69;
       font-size: 15px;
       font-family: 'Playfair Display', serif;
       font-weight: bold;
@@ -7,11 +7,11 @@ body{
 .container{
       width: 80%;
       margin: 50px auto;
-      color:  #ebdcdc;
+      color:  #ECD4EA;
 
 }
 .contact-box{
-      background:  #e6e6e6;
+      background:  #ECD4EA;
       display: flex;
       color:var(--font-color);
       
@@ -24,7 +24,7 @@ body{
       flex-basis: 50%;
       padding: 40px;
       background:white;
-      color:#e6e6e6;
+      color:#ECD4EA;
 }
 h1{
       margin-bottom: 10px;
@@ -43,13 +43,13 @@ h1{
 input{
       width: 100%;
       border: none;
-      border-bottom: 1px solid  #ebdcdc;
+      border-bottom: 1px solid #ECD4EA;
       outline: none;
       padding-bottom: 5px;
 }
 textarea{
       width: 100%;
-      border: 1px solid  #ebdcdc;
+      border: 1px solid  #ECD4EA;
       outline: none;
       padding: 10px;
       box-sizing: border-box;
@@ -60,7 +60,7 @@ label{
       color: var(--font-color);
 }
 button{
-      background:  #ebdcdc;
+      background:  #ECD4EA;
       width: 100px;
       border: none;
       outline: none;
@@ -68,7 +68,7 @@ button{
       height: 35px;
       border-radius: 30px;
       margin-top: 20px;
-      box-shadow: 0px 5px 15px 0px  #e6e6e6;
+      box-shadow: 0px 5px 15px 0px  #ECD4EA;
 }
 .contact-left h3{
       color:var(--font-color);
