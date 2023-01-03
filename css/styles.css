@@ -1,28 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-      --background-color: #e6e6e6;
+      --background-color: var(--first-color-light);
 
-      --primary-color: rgb(45, 3, 3);
-      --secondary-color: rgb(184, 38, 38);
+      --primary-color: var(--first-color);
+      --secondary-color: #E4908A;
 
-      --white: rgb(255, 255, 255);
-}
+      --white: rgb(244, 225, 240);
 
-body {
-      font-family: 'Open Sans', sans-serif;
+      --text-primary: antiquewhite;
+
+
+      --hue: 150;
+      --first-color: hsl(var(--hue), 24%, 32%);
+      --first-color-alt: hsl(var(--hue), 24%, 28%);
+      --first-color-light: hsl(var(--hue), 24%, 66%);
+      --first-color-lighten: hsl(var(--hue), 24%, 92%);
+      --title-color: hsl(var(--hue), 4%, 15%);
+      --text-color: hsl(var(--hue), 4%, 35%);
+      --text-color-light: hsl(var(--hue), 4%, 55%);
+      --body-color: hsl(var(--hue), 0%, 100%);
+      --container-color: #FFF;
 }
 
 h1,
 h2,
 h3,
-h4,
-h6 {
-      font-family: 'Roboto', sans-serif;
+h4 {
+      color: var(--title-color);
 }
 
-button {
-      border: none;
+.navbar-nav {
+      color: var(--first-color);
+}
+
+hr {
+      color: white;
+}
+
+body {
+
+      font-family: 'Philosopher', sans-serif;
+      font-weight: bold;
 }
 
 a,
@@ -41,29 +60,49 @@ a:active {
 }
 
 .text-highlight {
-      color: rgb(184, 38, 38);
+      font-size: 95px;
+      line-height: 65px;
+      background: transparent;
+
 }
 
-.general-button {
-      background-color: var(--secondary-color);
-      color: var(--white);
-}
-
-/* Section Navigation */
-nav {
+/* Menu bar*/
+.navbar {
       position: sticky;
       top: 0;
-      padding: 0 3rem;
+      padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: var(--background-color);
       z-index: 999;
+      box-shadow: 0 0 20px -15px black;
+}
+
+.navbar .dropdown-item.active {
+      background-color: white;
+      color: black;
+      font-weight: 600;
 }
 
 .logo {
       width: 80px;
       cursor: pointer;
+}
+
+.border-box1 {
+
+      position: absolute;
+      padding-left: 0 3rem;
+      width: 650px;
+      height: 600px;
+      margin: 50px auto;
+      border-style: double;
+      border-color: var(--background-color);
+      border-width: 20px;
+}
+
+.text-wrapper {
+      color: white;
 }
 
 nav ul {
@@ -82,7 +121,7 @@ nav ul li a {
       color: var(--primary-color);
       text-transform: uppercase;
       font-size: large;
-      font-weight: bold;
+      font-weight: 1000px;
 }
 
 nav ul li::after {
@@ -122,45 +161,24 @@ nav ul li:hover::after {
 }
 
 nav>img {
-      height: 6rem;
+      height: 1rem;
       padding: 0.3rem;
 }
 
-.sec-banner {
-      background-color: #e6e6e6;
-      display: flex;
-      margin: 0 10%;
-      height: 50rem;
-}
-
-.sec-banner img {
-      object-fit: contain;
-      height: 100%;
-}
-
-.jewellery-image {
-      width: 100%;
-      height: fit-content;
-}
-
-.text-container {
-      color: var(--primary-color);
+h1.title-jewellery {
       text-align: center;
-}
-
-.text-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-grow: 1;
-}
-
-h1 {
       font-size: 4rem;
+      color: var(--primary-color);
+      font-weight: 600;
 }
 
 .thumbnail {
-      background-color: #f0f0f0;
+
+      background-color: var(--primary-color);
+      height: 800px;
+      border-style: double;
+      border-width: 5px;
+      border-color: var(--background-color);
 }
 
 .contact-box {
@@ -180,20 +198,15 @@ h1 {
       flex-basis: 45%;
 }
 
-input {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid #ebdcdc;
-      outline: none;
-      padding-bottom: 5px;
-}
+
 
 textarea {
       width: 100%;
-      border: 1px solid #ebdcdc;
+      border: 1px solid var(--primary-color);
       outline: none;
       padding: 10px;
       box-sizing: border-box;
+
 }
 
 label {
@@ -210,13 +223,153 @@ tr td {
       padding-top: 20px;
 }
 
-/* Styling of Jewellery */
-.tile-jewellery {
-      background-color: var(--background-color);
+.item-name {
+      color: var(--background-color);
 }
 
+.price {
+      color: var(--background-color);
+}
+
+small {
+      color: antiquewhite;
+}
+
+/* Home page */
+
+
+/* Styling of Jewellery */
+.tile-jewellery {
+      background: var(--primary-color);
+      border-radius: 30px;
+      border-top-right-radius: 0;
+      border-width: 5px;
+}
+
+/* DStyling About us page */
+.about-us h1 {
+      text-align: center;
+      margin: 50px auto 100px;
+      color: var(--primary-color);
+}
+
+.main {
+      width: 90%;
+      min-height: 370px;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+}
+
+.service {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 30px;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      box-shadow: 0 0 20px -15px black;
+      z-index: 1;
+      transition: transform .7s;
+}
+
+.service-logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      /* border: 10px solid var(--background-color); */
+      margin: -90px auto 0;
+      background: var(--background-color);
+}
+
+.service-logo img {
+      width: 80px;
+      margin-top: 10px;
+}
+
+.service h4 {
+      height: 35px;
+      width: 80%;
+      background: var(--primary-color);
+      margin: 50px auto;
+      position: relative;
+}
+
+.service h4::after {
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: linear-gradient(to right, rgb(223, 61, 115), wheat);
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      z-index: -1;
+}
+
+.service h4::before {
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: linear-gradient(to right, wheat, rgb(232, 134, 167), rgb(238, 86, 136));
+      position: absolute;
+      left: -5px;
+      bottom: -5px;
+      z-index: -1;
+}
+
+.shadow1 {
+      height: 200px;
+      width: 80%;
+      background: var(--primary-color);
+      position: absolute;
+      border-radius: 10px;
+      bottom: 0;
+      left: 10%;
+      z-index: -1;
+      box-shadow: 0 0 20px -15px black;
+      transition: transform .7s;
+
+}
+
+.shadow2 {
+      height: 200px;
+      width: 64%;
+      background: var(--primary-color);
+      position: absolute;
+      border-radius: 10px;
+      bottom: 0;
+      left: 18%;
+      z-index: -2;
+}
+
+.main:hover .service {
+      transform: translateY(-20px);
+}
+
+.main:hover .shadow1 {
+      transform: translateY(-10px);
+}
+
+
 /* Styling of Contact Us */
+/* .contact-us {
+      padding-top: 20px;
+      background: var(--primary-color);
+      width: 50%;
+      margin: 3rem auto;
+      color: var(--secondary-color);
+} */
+
 .contact-list {
+      color: white;
+
+}
+
+.highlight {
+      color: white;
+}
+
+.container td {
       color: var(--secondary-color);
 }
 
@@ -227,13 +380,15 @@ tr td {
       width: 3rem;
       height: 3rem;
       margin: 0.5rem;
-      color: var(--white);
-      background-color: var(--primary-color);
+      color: white;
+      background-image: linear-gradient(45deg, wheat, rgb(238, 86, 136), rgb(238, 86, 136));
+      border-radius: 15px;
+
 }
 
 .price small {
       font-size: 0.7rem;
-      color: red;
+      color: white;
 }
 
 .container-img .container-like-icon {
@@ -242,4 +397,123 @@ tr td {
 
 .container-like-icon:hover {
       background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact_control {
+      background: transparent;
+      color: var(--secondary-color);
+      border-bottom: white solid 1px !important;
+      border: inherit;
+}
+
+footer {
+      background-color: var(--primary-color);
+}
+
+ul {
+      margin-bottom: 0;
+      padding-left: 0;
+      color: var(--secondary-color);
+}
+
+ul li {
+      list-style: none;
+}
+
+.input-container {
+      background-color: white;
+      padding: 0.5rem;
+      width: 100%;
+}
+
+.input-container input {
+      flex-grow: 2;
+      display: block;
+}
+
+.input-container button {
+      flex: 1;
+      flex-grow: 2;
+}
+
+footer {
+      color: white;
+}
+
+footer .credit-cards {
+      gap: 0.5rem;
+}
+
+footer img {
+      width: 35px;
+}
+
+
+/* About Us Styles */
+.service-logo {
+      overflow: hidden;
+}
+
+.service-logo-container img {
+      transform: scale(1.7);
+}
+
+.nav-breadcrumb {
+      height: 15rem;
+      font-size: larger;
+      background-image: url('../img/bangles/special.jpeg');
+      object-fit: cover;
+      background-position: center;
+}
+
+.input-container {
+      max-width: 400px;
+}
+
+.service-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.our-services .row {
+      margin-top: 170px;
+}
+
+.service-icon {
+      display: block;
+      font-size: 4.5rem;
+      color: #6F233F;
+}
+
+.contact-us .container {
+      /* background-color: #6F233F; */
+}
+
+.carousel-item {
+      max-height: 600px;
+}
+
+.carousel {
+      background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-img {
+      overflow: hidden;
+}
+
+img[alt="jewellery image"] {
+      display: block;
+}
+
+img[alt="jewellery image"]:hover {
+      display: block;
+      transform: scale(1.07);
+      transition: 0.6s ease-in;
+}
+
+
+/* About Us container */
+.about-us-container {
+      background-color: #dce1da;
 }

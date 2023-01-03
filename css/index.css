@@ -1,0 +1,13 @@
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    display: block;
+    height: 2.5rem;
+    background-color: var(--first-color);
+    border-radius: 0.5rem;
+    color: white;
+}
