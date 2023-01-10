@@ -2,14 +2,14 @@ const bangles = [
   {
     "itemname": "Bangle (Stones)",
     "filepath": "img/bangles/bangle 1.jpeg",
-    "weight": "25.6 g",
+    "weight": "14.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle",
     "filepath": "img/bangles/bangle 2.jpeg",
-    "weight": "18.5 g",
+    "weight": "32.6 g",
     "type": "22 Kt ･ Yellow Gold",
     "liked": false
 
@@ -17,7 +17,7 @@ const bangles = [
   {
     "itemname": "Bangle (Stones)",
     "filepath": "img/bangles/bangle 3.jpeg",
-    "weight": "44.5 g",
+    "weight": "40.5 g",
     "type": "22 Kt ･ White Gold",
     "liked": false
 
@@ -25,35 +25,35 @@ const bangles = [
   {
     "itemname": "Bangle (Stones)",
     "filepath": "img/bangles/bangle 4.jpeg",
-    "weight": "18.5 g",
+    "weight": "10.2 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle",
     "filepath": "img/bangles/bangle 5.jpeg",
-    "weight": "18.5 g",
+    "weight": "12.3 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle",
     "filepath": "img/bangles/bangle 6.jpeg",
-    "weight": "18.5 g",
+    "weight": "14.2 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle",
     "filepath": "img/bangles/bangle 7.jpeg",
-    "weight": "25.6 g",
+    "weight": "12.8 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle",
     "filepath": "img/bangles/bangle 8.jpeg",
-    "weight": "18.5 g",
+    "weight": "10.4 g",
     "type": "22 Kt ･ Yellow Gold",
     "liked": false
 
@@ -61,7 +61,7 @@ const bangles = [
   {
     "itemname": "Bangle (Stones)",
     "filepath": "img/bangles/bangle 9.jpeg",
-    "weight": "44.5 g",
+    "weight": "14.3 g",
     "type": "22 Kt ･ White Gold",
     "liked": false
 
@@ -69,21 +69,21 @@ const bangles = [
   {
     "itemname": "Bangle",
     "filepath": "img/bangles/bangle 10.jpeg",
-    "weight": "18.5 g",
+    "weight": "20.2 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle (Stones)",
     "filepath": "img/bangles/bangle 11.jpeg",
-    "weight": "18.5 g",
+    "weight": " 40.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Bangle (Stones)",
     "filepath": "img/bangles/bangle 12.jpeg",
-    "weight": "18.5 g",
+    "weight": "16.5 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   }

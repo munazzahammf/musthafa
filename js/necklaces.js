@@ -2,14 +2,14 @@ const necklaces = [
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 1.jpeg",
-    "weight": "25.6 g",
+    "weight": "30.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 2.jpeg",
-    "weight": "18.5 g",
+    "weight": "32.8 g",
     "type": "22 Kt ･ Yellow Gold",
     "liked": false
 
@@ -17,7 +17,7 @@ const necklaces = [
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 3.jpeg",
-    "weight": "44.5 g",
+    "weight": "24.7 g",
     "type": "22 Kt ･ White Gold",
     "liked": false
 
@@ -25,49 +25,49 @@ const necklaces = [
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 4.jpeg",
-    "weight": "18.5 g",
+    "weight": "20.2 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 12.jpg",
-    "weight": "18.5 g",
+    "weight": "14.3 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 5.jpeg",
-    "weight": "18.5 g",
+    "weight": "24.8 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 6.jpeg",
-    "weight": "18.5 g",
+    "weight": "30.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 11.jpg",
-    "weight": "18.5 g",
+    "weight": "16.5 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 7.jpeg",
-    "weight": "25.6 g",
+    "weight": "16.7 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 8.jpeg",
-    "weight": "18.5 g",
+    "weight": "12.8 g",
     "type": "22 Kt ･ Yellow Gold",
     "liked": false
 
@@ -75,7 +75,7 @@ const necklaces = [
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 9.jpeg",
-    "weight": "44.5 g",
+    "weight": "12.5 g",
     "type": "22 Kt ･ White Gold",
     "liked": false
 
@@ -83,7 +83,7 @@ const necklaces = [
   {
     "itemname": "Awesome Necklace",
     "filepath": "img/necklaces/necklace 10.jpeg",
-    "weight": "18.5 g",
+    "weight": "10.7 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
