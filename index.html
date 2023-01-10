@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> add 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!-- Bootstrap Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <title>Musthafa - Home</title>
+
+
+  <!-- Custom Style Sheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg px-5 navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            JEWELLERY
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="bangles.html">Bangles</a>
+            <a class="dropdown-item" href="rings.html">Rings</a>
+            <a class="dropdown-item" href="necklaces.html">Necklaces</a>
+            <a class="dropdown-item" href="pendants.html">Pendants</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#our-services">OUR SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#about-us">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contact-us">CONTACT US</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/special/bck1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/special/bck2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/special/bck3.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <br>
+
+  <!--jewell set-->
+  <section class="jewel-set">
+    <h2>Your wedding <br> Your style</h2>
+    <p>Be Your Own Kind Of Beautiful.......</p>
+    <div class="img-set">
+        <div class="img1">
+      <img src="img/special/img12.jpg" alt="img1">
+        </div>
+        <div class="img2">
+      <img src="img/special/img2.jpg" alt="img2">
+        </div>
+        <div class="img4">
+      <img src="img/special/img6.jpg" alt="img4">
+        </div>
+        <div class="img5">
+      <img src="img/special/img5.jpg" alt="img5">
+        </div>
+        <div class="img6">
+      <img src="img/special/img3.jpg" alt="img6">
+        </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Section Jewellery -->
+  <section class="py-5" id="jewellery">
+    <h3 class="title-jewellery text-center">GALLERY OF JEWELLERY</h3> <br>
+
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center pb-4">
+        <h3>Rings</h3>
+        <a href="rings.html">
+          <button id="ring-button">See More...</button>
+        </a>
+      </div>
+      <div class="row" id="ring-container"></div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center pb-4">
+        <h3>Bangles</h3>
+        <a href="bangles.html">
+          <button id="bangle-button">See More...</button>
+        </a>
+      </div>
+      <div class="row" id="bangle-container"></div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center pb-4">
+        <h3>Necklaces</h3>
+        <a href="necklaces.html">
+          <button id="bangle-button">See More...</button>
+        </a>
+      </div>
+      <div class="row" id="necklaces-container"></div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center pb-4">
+        <h3>Pendants</h3>
+        <a href="necklaces.html">
+          <button id="bangle-button">See More...</button>
+        </a>
+      </div>
+      <div class="row" id="pendants-container"></div>
+    </div>
+
+
+  </section>
+
+
+  <br>
+  <br>
+
+
+  <!-- Section Our Services -->
+  <section class="our-services" id="our-services">
+    <h3 class="text-center">OUR SERVICES</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <i class="service-icon fa-solid fa-gem"></i>
+              </div>
+              <h4>JEWELLERY <br> STORE</h4>
+              <p>
+                We offer a wide selection of beautiful and unique pieces, ranging from
+                elegant earrings
+                to dazzling diamond rings. Our staff is here to help you find the perfect addition to your
+                collection. Thank you for choosing us for all your jewellery needs.
+              </p>
+
+            </div>
+
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <i class="service-icon fa-solid fa-sack-dollar"></i>
+              </div>
+              <h4>CURRENCY EXCHANGE</h4>
+              <p>We offer a fast and reliable service for converting your money into any of the major currencies. Our
+                friendly staff is
+                available to assist you with all of your currency exchange needs and we strive to provide you with the
+                most competitive
+                rates in the market.
+              </p>
+            </div>
+
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="main">
+            <div class="service">
+              <div class="service-logo">
+                <i class="service-icon fa-solid fa-right-left"></i>
+              </div>
+              <h4>JEWELLERY EXCHANGE</h4>
+              <p>
+                we offer trading in your old jewelry for new pieces. Our
+                staff will evaluate the value of your jewelry and help you choose the perfect new piece to add to
+                your collection. We carry a wide selection of high-quality, stylish jewelry at competitive prices.
+              </p>
+            </div>
+
+            <div class="shadow1"></div>
+            <div class="shadow2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+  <!-- Section Contact Us -->
+  <section class="contact-us pt-5" id="contact-us">
+    <h3 class="text-center">CONTACT US</h3>
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-6 px-5">
+          <h3>Send Your Request</h3>
+          <form>
+            <div class="input-row">
+              <div class="input-group">
+                <label>Name</label>
+                <input class="contact_control" type="text" placeholder="M.M.M.Musthak" />
+              </div>
+
+              <div class="input-group">
+                <label>Phone Number</label>
+                <input class="contact_control" type="text" placeholder="+94778824678" />
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <label>Email</label>
+                <input class="contact_control" type="email" placeholder="musthafa@gmail.com" />
+              </div>
+
+              <div class="input-group">
+                <label>Subject</label>
+                <input class="contact_control" type="text" placeholder="Product demo" />
+              </div>
+            </div>
+
+            <label>Message</label>
+            <textarea class="contact_control" rows="3" placeholder="Your Message"></textarea>
+            <button type="submit" class="general-button py-1 fs-5 px-5 fw-bold">
+              SEND
+            </button>
+          </form>
+        </div>
+        <div class="col-6 px-5">
+          <div>
+            <h3 class="pb-1">Reach Us Via</h3>
+            <p>Contact us for any inquiries or to schedule a visit to our shop. We would be happy to assist you in
+              finding the perfect
+              piece of jewelry.</p>
+            <table class="fs-6 text-secondary mb-3">
+              <tbody>
+                <tr>
+                  <td class="highlight">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </td>
+                  <td>No:99, Bazaar Street, Chilaw.</td>
+                </tr>
+                <tr>
+                  <td class="highlight">
+                    <i class="fa-solid fa-envelope"></i>
+                  </td>
+                  <td>
+                    <a href="mailto:connectwithus@example.com">connectwithus@example.com</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="highlight">
+                    <i class="fa-solid fa-phone"></i>
+                  </td>
+                  <td><a href="tel:+94-77882-4678">+94778824678</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <div class="container social-icons g-0">
+              <ul class="list-inline g-0 fs-4 d-flex justify-content-start">
+                <li>
+                  <a href="https://www.facebook.com/musthafajewellers">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/musthafajewellers/">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.tiktok.com/@musthafajewellers">
+                    <i class="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://WhatsApp-com">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="about-us py-5">
+    <h3 class="text-center pb-5">ABOUT US</h3>
+    <div class="about-us-container container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 px-6 py-6">
+          <h1 class="text-start mb-2">Creating timeless pieces for your forever moments...</h1> <br>
+          <p class="fs-5">
+            Musthafa Jewellers is a family owned business located in Chilaw, Sri Lanka. We have been serving our
+            customers
+            with
+            high
+            quality jewellery, branded watches, and currency exchange services since 2015. Our commitment to excellence
+            and
+            personalized service has made us a trusted destination for all your jewellery needs. Whether you are looking
+            to
+            purchase
+            a new piece or exchange your old jewellery for something new, we are here to help. Thank you for choosing
+            Musthafa
+            Jewellers.
+          </p>
+        </div>
+        <div class="col-6 d-sm-none d-md-block">
+          <img class="d-block w-100 h-100" style="object-fit: cover;" src="img/bangles/sp2.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pt-5 px-3 pb-3">
+    <div>
+      <div class="row mb-5">
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div class="text-content px-2">
+            <h3 class="mb-3">Subscribe to our newsletter to stay updated</h3>
+            <div class="input-container d-flex align-items-center justify-content-between">
+              <input placeholder="Enter your email" class="w-50" type="email" name="email" id="email">
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div class="text-content px-2">
+            <h3>Our Address</h3>
+            <p>No: 99, Bazaar Street,<br>Chilaw. <br>61000</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div class="text-content px-2">
+            <h3>Contact Us</h3>
+            <p>
+              <a href="tel:+94-77882-4678">+94778824678</a>
+              <br>
+              <a href="mailto:musthafajewellers@example.com">musthafajewellers@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div class="text-content px-2">
+          <h3>We accept all credit cards</h3>
+          <div class="credit-cards d-flex">
+            <img src="img/cards/card1.png" alt="">
+            <img src="img/cards/card2.png" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col m-auto w-50 text-center">&copy; Musthafa Jewellers. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a9b8a8cd22.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <script src="js/rings.js"></script>
+  <script src="js/bangles.js"></script>
+  <script src="js/necklaces.js"></script>
+  <script src="js/pendants.js"></script>
+</body>
+</html>
