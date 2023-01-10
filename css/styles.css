@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+      --background-color: var(--first-color-light);
+
+      --primary-color: rgb(8, 94, 61);
+      --secondary-color:#ffd9c8d9;
+
+      --white: rgb(244, 225, 240);
+
+      --text-primary: rgb(249, 218, 176);
+
+
+      --hue: 150;
+      --first-color: hsl(var(--hue), 24%, 32%);
+      --first-color-alt: hsl(var(--hue), 24%, 28%);
+      --first-color-light: hsl(var(--hue), 24%, 66%);
+      --first-color-lighten: hsl(var(--hue), 24%, 92%);
+      --title-color: hsl(var(--hue), 4%, 15%);
+      --text-color: hsl(var(--hue), 4%, 35%);
+      --text-color-light: hsl(var(--hue), 4%, 55%);
+      --body-color: hsl(var(--hue), 0%, 100%);
+      --container-color: #FFF;
+}
+h3{
+      color: var(--primary-color);
+      font: weight 200px;
+      font-size: 30px;
+      font-weight: 100%;
+}
+h1,
+h2,
+h4 {
+      color: var(--title-color);
+}
+
+.navbar-nav {
+      color: var(--first-color);
+}
+
+hr {
+      color: white;
+}
+
+body {
+      background-color: #e6e6e6;
+      font-family: 'Philosopher', sans-serif;
+      font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+      text-decoration: none;
+      color: inherit;
+}
+
+.banner {
+      width: 100%;
+      opacity: 0.9;
+      background-size: cover;
+      background-position: center;
+}
+
+.text-highlight {
+      font-size: 95px;
+      line-height: 65px;
+      background: transparent;
+
+}
+
+/* Menu bar*/
+.navbar {
+      position: sticky;
+      top: 0;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 999;
+      box-shadow: 0 0 20px -15px black;
+}
+
+.navbar .dropdown-item.active {
+      background-color: white;
+      color: black;
+      font-weight: 600;
+}
+
+.logo {
+      width: 80px;
+      cursor: pointer;
+}
+
+.border-box1 {
+
+      position: absolute;
+      padding-left: 0 3rem;
+      width: 650px;
+      height: 600px;
+      margin: 50px auto;
+      border-style: double;
+      border-color: var(--background-color);
+      border-width: 20px;
+}
+
+.text-wrapper {
+      color: white;
+}
+
+nav ul {
+      margin-bottom: 0;
+}
+
+nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      font-size: large;
+      font-weight: 1000px;
+}
+
+nav ul li::after {
+      content: '';
+      height: 3px;
+      width: 0;
+      background: var(--primary-color);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      transition: 0.5s;
+}
+
+nav ul li:hover::after {
+      width: 100%;
+}
+
+.content {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: left;
+      color: wheat;
+}
+
+.content h6 {
+      margin: 20px auto;
+      font-weight: 100;
+      line-height: 50px;
+      font-size: 28px;
+}
+
+.content h5 {
+      font-size: 45px;
+      margin-top: 80px;
+}
+
+nav>img {
+      height: 1rem;
+      padding: 0.3rem;
+}
+
+h1.title-jewellery {
+      text-align: center;
+      font-size: 4rem;
+      color: var(--primary-color);
+      font-weight: 600;
+}
+
+.thumbnail {
+
+      background-color: var(--primary-color);
+      height: 800px;
+      border-style: double;
+      border-width: 5px;
+      border-color: var(--background-color);
+}
+
+.contact-box {
+      background: #e6e6e6;
+      display: flex;
+      color: var(--primary-color);
+
+}
+
+.input-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+}
+
+.input-row .input-group {
+      flex-basis: 45%;
+}
+
+
+
+textarea {
+      width: 100%;
+      border: 1px solid var(--primary-color);
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+
+}
+
+label {
+      margin-bottom: 6px;
+      display: block;
+      color: var(--primary-color);
+}
+
+tr td:first-child {
+      padding-right: 20px;
+}
+
+tr td {
+      padding-top: 20px;
+}
+
+.item-name {
+      color: var(--background-color);
+}
+
+.price {
+      color: var(--background-color);
+}
+
+small {
+      color: antiquewhite;
+}
+
+/* Home page */
+
+
+/* Styling of Jewellery */
+.py-5 {
+      margin-left: 150px;
+      margin-right: 150px;
+}
+.tile-jewellery {
+      background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+      border-radius: 15px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+      border-width: 5px;
+}
+
+/* DStyling About us page */
+.about-us h1 {
+      text-align: center;
+      margin: 50px auto 100px;
+      color: var(--primary-color);
+}
+
+.main {
+      width: 90%;
+      min-height: 370px;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+}
+
+.service {
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 30px;
+      border-radius: 10px;
+      position: absolute;
+      bottom: 0;
+      box-shadow: 0 0 20px -15px black;
+      z-index: 1;
+      transition: transform .7s;
+}
+
+.service-logo {
+      width: 120px;
+      height: 120px;
+      border-style: solid;
+      border-color: var(--primary-color);
+      border-radius: 50%;
+      /* border: 10px solid var(--background-color); */
+      margin: -90px auto 0;
+      background: #e6e6e6;
+}
+
+.service-logo img {
+      width: 80px;
+      margin-top: 10px;
+}
+
+.service h4 {
+      color: #e6e6e6;
+      font-style: italic;
+      height: 35px;
+      width: 80%;
+      background: var(--primary-color);
+      margin: 50px auto;
+      position: relative;
+}
+/*
+.service h4::after {
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: #84A59D;
+      position: absolute;
+      right: -5px;
+      top: -5px;
+      z-index: -1;
+}
+
+.service h4::before {
+      content: '';
+      width: 40px;
+      height: 30px;
+      background: #84A59D;
+      position: absolute;
+      left: -5px;
+      bottom: -5px;
+      z-index: -1;
+}
+*/
+.shadow1 {
+      height: 220px;
+      width: 80%;
+      background: var(--primary-color);
+      position: absolute;
+      border-radius: 10px;
+      bottom: 0;
+      left: 10%;
+      z-index: -1;
+      box-shadow: 0 0 20px -15px black;
+      transition: transform .7s;
+
+}
+
+.shadow2 {
+      height: 220px;
+      width: 64%;
+      background: var(--primary-color);
+      position: absolute;
+      border-radius: 10px;
+      bottom: 0;
+      left: 18%;
+      z-index: -2;
+}
+
+.main:hover .service {
+      transform: translateY(-28px);
+}
+
+.main:hover .shadow1 {
+      transform: translateY(-15px);
+}
+
+
+
+/* .contact-us {
+      padding-top: 20px;
+      background: var(--primary-color);
+      width: 50%;
+      margin: 3rem auto;
+      color: var(--secondary-color);
+} */
+
+
+
+/* Styling of Contact Us */
+.contact-list {
+      color: white;
+
+}
+
+.highlight {
+      color: white;
+}
+
+.container td {
+      color: rgb(179, 129, 3);
+}
+
+.social-icons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 3rem;
+      height: 3rem;
+      margin: 0.5rem;
+      color: white;
+      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+      border-radius: 15px;
+
+}
+
+.price small {
+      font-size: 0.7rem;
+      color: white;
+}
+
+.container-img .container-like-icon {
+      position: absolute;
+}
+
+.container-like-icon:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact_control {
+      background: transparent;
+      color: var(--secondary-color);
+      border: white solid 1px !important;
+      border-radius: 30px;
+      border: inherit;
+}
+.contact-us {
+      background-color: #84A59D;
+}
+.contact-us button{
+      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+}
+.pt-5 button{
+      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+}
+/* Styling of footer page */
+footer {
+      background-color: var(--primary-color);
+}
+.text-content h3 {
+      color: var(--secondary-color);
+      font-style:oblique;
+      font-size:x-large;
+}
+
+ul {
+      margin-bottom: 0;
+      padding-left: 0;
+      color: var(--secondary-color);
+}
+
+ul li {
+      list-style: none;
+}
+
+.input-container {
+      background-color: white;
+      padding: 0.5rem;
+      width: 100%;
+}
+
+.input-container input {
+      flex-grow: 2;
+      display: block;
+}
+
+.input-container button {
+      flex: 1;
+      flex-grow: 2;
+}
+
+footer {
+      color: white;
+}
+
+footer .credit-cards {
+      gap: 0.5rem;
+}
+
+footer img {
+      width: 35px;
+}
+
+/* Styling of services page */
+.our-services {
+      margin-left: 120px;
+      margin-right: 120px;
+}
+.service-logo {
+      overflow: hidden;
+}
+
+.service-logo-container img {
+      transform: scale(1.7);
+}
+
+.nav-breadcrumb {
+      height: 15rem;
+      font-size: larger;
+      background-image: url('../img/bangles/special.jpeg');
+      object-fit: cover;
+      background-position: center;
+}
+
+.input-container {
+      max-width: 400px;
+}
+
+.service-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.our-services .row {
+      margin-top: 170px;
+}
+
+.service-icon {
+      display: block;
+      font-size: 4rem;
+      color:var(--primary-color);
+}
+
+.contact-us .container {
+      /* background-color: #6F233F; */
+}
+
+.carousel-item {
+      max-height: 600px;
+}
+
+.carousel {
+      background-color: rgba(0, 0, 0, 0.4);
+}
+
+.container-img {
+      overflow: hidden;
+}
+
+img[alt="jewellery image"] {
+      display: block;
+}
+
+img[alt="jewellery image"]:hover {
+      display: block;
+      transform: scale(1.07);
+      transition: 0.6s ease-in;
+}
+
+
+/* About Us container */
+.about-us{
+      margin-right: 200px;
+      margin-left: 200px;
+}
+.about-us-container {
+      border:var(--primary-color) solid 2px !important;
+      border-radius: 25px;
+      border: inherit;
+      padding: 15px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 0;
+}
+.about-us img{
+      border-radius: 300px;
+
+}
+.about-us p{
+      font-style: italic;
+      font-weight: bold;
+      font-variant:inherit;
+      font-size: larger;
+}
+.about-us h1{
+      font-variant: initial;
+      font-size:xx-large;
+}
+
+
+/*image set */
+.jewel-set div{
+      margin-left: 35px;
+}
+.img1 img{
+      width: 300px;
+      height: 300px;
+      margin-left: 180px;
+      margin-top: 100px;
+}
+.img2 img{
+      width: 300px;
+      height: 300px;
+      margin-left: 180px;
+}
+.img4 img{
+      width: 300px;
+      height: 385px;
+      margin-top: -410px;
+      margin-left: 870px;
+}
+.img5 img{
+      width: 300px;
+      height: 245px;
+      margin-left: 870px;
+      margin-top: -1025px;
+}
+.img6 img{
+      width: 390px;
+      height: 596px;
+      margin-left: 480px;
+      margin-top: -720px;
+}
+.jewel-set h2{
+      margin-top: 50px;
+      font-variant: small-caps;
+      font-family:'Philosopher', sans-serif ;
+      font-style: italic;
+      font-display:initial;
+      font-weight: 1000px;
+      text-shadow:#84A59D 0 -2px;
+      font-size:80px;
+      color:seagreen;
+      text-align: center;
+}
+.jewel-set p{
+      font-family:'Philosopher', sans-serif ;
+      font-style: italic;
+      font-size:30px;
+      color: rgb(211, 97, 49);
+      text-align: center;
+}
+.carousel-inner img{
+      object-fit: cover;
+      width: 100%;
+}
+
