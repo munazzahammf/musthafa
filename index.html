@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" /> add 
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -22,8 +22,10 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg px-5 navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg px-5 navbar-light green-gradient text-white align-items-center ">
+    <a class="navbar-brand p-0" href="#">
+      <img src="logo.png" alt="">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -59,7 +61,7 @@
   </nav>
 
 
-  
+
   <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -68,48 +70,41 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/special/bck1.jpg" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/special/bck2.jpg" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/special/bck3.jpg" alt="Third slide">
+      <div class="carousel-item active postion-relative">
+        <div class="background-dark position-absolute w-100 h-100"></div>
+        <img src="img/carousel/carousel2.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block jewel-set">
+          <h2>Your wedding <br> Your style</h2>
+          <p>Be Your Own Kind Of Beautiful.......</p>
+        </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
 
   <br>
 
   <!--jewell set-->
-  <section class="jewel-set">
-    <h2>Your wedding <br> Your style</h2>
-    <p>Be Your Own Kind Of Beautiful.......</p>
-    <div class="img-set">
-        <div class="img1">
-      <img src="img/special/img12.jpg" alt="img1">
+  <section class="img-gallery">
+    <div class="container m-auto row img-container h-100 px-5">
+      <div class="col-md-4 h-100 d-flex flex-column">
+        <div class="img-row pb-1">
+          <img src="img/special/img12.jpg" alt="">
         </div>
-        <div class="img2">
-      <img src="img/special/img2.jpg" alt="img2">
+        <div class="img-row">
+          <img src="img/special/img9.jpg" alt="">
         </div>
-        <div class="img4">
-      <img src="img/special/img6.jpg" alt="img4">
+      </div>
+      <div class="col-4">
+        <img src="img/special/img2.jpg" alt="">
+      </div>
+      <div class="col-4 h-100 d-flex flex-column">
+        <div class="img-row pb-1">
+          <img src="img/special/img11.jpg" alt="">
         </div>
-        <div class="img5">
-      <img src="img/special/img5.jpg" alt="img5">
+        <div class="img-row">
+          <img src="img/special/img6.jpg" alt="">
         </div>
-        <div class="img6">
-      <img src="img/special/img3.jpg" alt="img6">
-        </div>
+      </div>
     </div>
   </section>
 
@@ -154,7 +149,7 @@
     <div class="container mt-5">
       <div class="d-flex justify-content-between align-items-center pb-4">
         <h3>Pendants</h3>
-        <a href="necklaces.html">
+        <a href="pendants.html">
           <button id="bangle-button">See More...</button>
         </a>
       </div>
@@ -244,15 +239,14 @@
     <h3 class="text-center">CONTACT US</h3>
     <div class="container p-5">
       <div class="row">
-        <div class="col-6 px-5">
-          <h3>Send Your Request</h3>
+        <div class="col-8">
+          <h3>Get in touch</h3>
           <form>
             <div class="input-row">
               <div class="input-group">
                 <label>Name</label>
                 <input class="contact_control" type="text" placeholder="M.M.M.Musthak" />
               </div>
-
               <div class="input-group">
                 <label>Phone Number</label>
                 <input class="contact_control" type="text" placeholder="+94778824678" />
@@ -271,14 +265,18 @@
               </div>
             </div>
 
-            <label>Message</label>
-            <textarea class="contact_control" rows="3" placeholder="Your Message"></textarea>
+            <div class="input-row">
+              <div class="input-group">
+                <label>Message</label>
+                <textarea class="contact_control" rows="3" placeholder="Your Message"></textarea>
+              </div>
+            </div>
             <button type="submit" class="general-button py-1 fs-5 px-5 fw-bold">
               SEND
             </button>
           </form>
         </div>
-        <div class="col-6 px-5">
+        <div class="col-4 px-5">
           <div>
             <h3 class="pb-1">Reach Us Via</h3>
             <p>Contact us for any inquiries or to schedule a visit to our shop. We would be happy to assist you in
@@ -347,7 +345,7 @@
   </section>
 
 
-  <section class="about-us py-5">
+  <section id="about-us" class="about-us py-5">
     <h3 class="text-center pb-5">ABOUT US</h3>
     <div class="about-us-container container">
       <div class="row">
@@ -405,12 +403,12 @@
         </div>
         <div class="col-12 col-md-6 col-lg-3 mb-3">
           <div class="text-content px-2">
-          <h3>We accept all credit cards</h3>
-          <div class="credit-cards d-flex">
-            <img src="img/cards/card1.png" alt="">
-            <img src="img/cards/card2.png" alt="">
+            <h3>We accept all credit cards</h3>
+            <div class="credit-cards d-flex">
+              <img src="img/cards/card1.png" alt="">
+              <img src="img/cards/card2.png" alt="">
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <div class="col m-auto w-50 text-center">&copy; Musthafa Jewellers. All rights reserved.</div>

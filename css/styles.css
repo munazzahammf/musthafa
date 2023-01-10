@@ -4,12 +4,11 @@
       --background-color: var(--first-color-light);
 
       --primary-color: rgb(8, 94, 61);
-      --secondary-color:#ffd9c8d9;
+      --secondary-color: #ffd9c8d9;
 
       --white: rgb(244, 225, 240);
 
       --text-primary: rgb(249, 218, 176);
-
 
       --hue: 150;
       --first-color: hsl(var(--hue), 24%, 32%);
@@ -22,24 +21,12 @@
       --body-color: hsl(var(--hue), 0%, 100%);
       --container-color: #FFF;
 }
-h3{
-      color: var(--primary-color);
-      font: weight 200px;
-      font-size: 30px;
-      font-weight: 100%;
-}
+
 h1,
 h2,
+h3,
 h4 {
-      color: var(--title-color);
-}
-
-.navbar-nav {
-      color: var(--first-color);
-}
-
-hr {
-      color: white;
+      color: var(--primary-color);
 }
 
 body {
@@ -48,38 +35,39 @@ body {
       font-weight: bold;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
-      text-decoration: none;
-      color: inherit;
-}
 
-.banner {
-      width: 100%;
-      opacity: 0.9;
-      background-size: cover;
-      background-position: center;
-}
 
-.text-highlight {
-      font-size: 95px;
-      line-height: 65px;
-      background: transparent;
-
-}
-
-/* Menu bar*/
+/* Navigation bar*/
 .navbar {
+      background-color: var(--primary-color);
       position: sticky;
       top: 0;
+      height: 12vh;
+      max-height: 90px;
       padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       z-index: 999;
       box-shadow: 0 0 20px -15px black;
+      color: white;
+}
+
+.navbar-nav {
+      color: var(--first-color);
+}
+
+.nav-link {
+      color: white !important;
+}
+
+.navbar-brand {
+      height: 100%;
+}
+
+.navbar-brand img {
+      object-fit: contain;
+      height: 100%;
 }
 
 .navbar .dropdown-item.active {
@@ -132,7 +120,7 @@ nav ul li::after {
       content: '';
       height: 3px;
       width: 0;
-      background: var(--primary-color);
+      background: white;
       position: absolute;
       left: 0;
       bottom: -10px;
@@ -196,12 +184,16 @@ h1.title-jewellery {
       display: flex;
       justify-content: space-between;
       margin-bottom: 20px;
+      column-gap: 1rem;
 }
+
+/* .input-row .input-group {
+      flex-basis: 45%;
+} */
 
 .input-row .input-group {
-      flex-basis: 45%;
+      flex-direction: column;
 }
-
 
 
 textarea {
@@ -243,12 +235,13 @@ small {
 
 
 /* Styling of Jewellery */
-.py-5 {
-      margin-left: 150px;
-      margin-right: 150px;
+
+.green-gradient {
+      background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
 }
+
 .tile-jewellery {
-      background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+      background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
       border-radius: 15px;
       border-top-right-radius: 0;
       border-bottom-left-radius: 0;
@@ -307,6 +300,7 @@ small {
       margin: 50px auto;
       position: relative;
 }
+
 /*
 .service h4::after {
       content: '';
@@ -397,7 +391,7 @@ small {
       height: 3rem;
       margin: 0.5rem;
       color: white;
-      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
       border-radius: 15px;
 
 }
@@ -419,26 +413,34 @@ small {
       background: transparent;
       color: var(--secondary-color);
       border: white solid 1px !important;
-      border-radius: 30px;
       border: inherit;
 }
+
+input.contact_control {
+      height: 3rem;
+}
+
 .contact-us {
       background-color: #84A59D;
 }
-.contact-us button{
-      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+
+.contact-us button {
+      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
 }
-.pt-5 button{
-      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100),rgb(23, 141, 110));
+
+.pt-5 button {
+      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
 }
+
 /* Styling of footer page */
 footer {
       background-color: var(--primary-color);
 }
+
 .text-content h3 {
       color: var(--secondary-color);
-      font-style:oblique;
-      font-size:x-large;
+      font-style: oblique;
+      font-size: x-large;
 }
 
 ul {
@@ -484,6 +486,7 @@ footer img {
       margin-left: 120px;
       margin-right: 120px;
 }
+
 .service-logo {
       overflow: hidden;
 }
@@ -517,23 +520,61 @@ footer img {
 .service-icon {
       display: block;
       font-size: 4rem;
-      color:var(--primary-color);
+      color: var(--primary-color);
 }
 
 .contact-us .container {
       /* background-color: #6F233F; */
 }
 
-.carousel-item {
-      max-height: 600px;
-}
-
+/* Section Carousel */
 .carousel {
       background-color: rgba(0, 0, 0, 0.4);
+      height: 90vh;
+}
+
+.carousel-item {
+      height: 90vh;
+}
+
+.carousel-inner img {
+      object-fit: contain;
+      height: 100%;
+      object-position: 0px 0px;
+}
+
+.carousel-caption {
+      top: 100px;
+}
+
+.jewel-set h2 {
+      margin-top: 50px;
+      font-variant: small-caps;
+      font-family: 'Philosopher', sans-serif;
+      font-style: italic;
+      font-display: initial;
+      font-weight: 900;
+      text-shadow: #462010 0 -2px;
+      font-size: 80px;
+      color: #000000;
+      text-align: center;
+}
+
+.jewel-set p {
+      font-family: 'Philosopher', sans-serif;
+      font-style: italic;
+      font-size: 30px;
+      color: rgb(211, 97, 49);
+      text-align: center;
 }
 
 .container-img {
       overflow: hidden;
+}
+
+.background-dark {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+      background-color: rgba(0, 0, 0, 0.4);
 }
 
 img[alt="jewellery image"] {
@@ -548,88 +589,99 @@ img[alt="jewellery image"]:hover {
 
 
 /* About Us container */
-.about-us{
+.about-us {
       margin-right: 200px;
       margin-left: 200px;
 }
+
 .about-us-container {
-      border:var(--primary-color) solid 2px !important;
+      border: var(--primary-color) solid 2px !important;
       border-radius: 25px;
       border: inherit;
       padding: 15px;
       border-top-right-radius: 0;
       border-bottom-left-radius: 0;
 }
-.about-us img{
+
+.about-us img {
       border-radius: 300px;
 
 }
-.about-us p{
+
+.about-us p {
       font-style: italic;
       font-weight: bold;
-      font-variant:inherit;
+      font-variant: inherit;
       font-size: larger;
 }
-.about-us h1{
+
+.about-us h1 {
       font-variant: initial;
-      font-size:xx-large;
+      font-size: xx-large;
 }
 
 
-/*image set */
-.jewel-set div{
-      margin-left: 35px;
+/*Section Image Gallery */
+.img-gallery {
+      height: 75vh;
 }
-.img1 img{
+
+.img-container {
+      height: 80%;
+}
+
+.img-container>* {
+      padding-left: 2px !important;
+      padding-right: 2px !important;
+}
+
+.img-row {
+      width: 100%;
+      height: 50%;
+}
+
+.img-gallery img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.img-row img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+}
+
+.img1 img {
       width: 300px;
       height: 300px;
       margin-left: 180px;
       margin-top: 100px;
 }
-.img2 img{
+
+.img2 img {
       width: 300px;
       height: 300px;
       margin-left: 180px;
 }
-.img4 img{
+
+.img4 img {
       width: 300px;
       height: 385px;
       margin-top: -410px;
       margin-left: 870px;
 }
-.img5 img{
+
+.img5 img {
       width: 300px;
       height: 245px;
       margin-left: 870px;
       margin-top: -1025px;
 }
-.img6 img{
+
+.img6 img {
       width: 390px;
       height: 596px;
       margin-left: 480px;
       margin-top: -720px;
 }
-.jewel-set h2{
-      margin-top: 50px;
-      font-variant: small-caps;
-      font-family:'Philosopher', sans-serif ;
-      font-style: italic;
-      font-display:initial;
-      font-weight: 1000px;
-      text-shadow:#84A59D 0 -2px;
-      font-size:80px;
-      color:seagreen;
-      text-align: center;
-}
-.jewel-set p{
-      font-family:'Philosopher', sans-serif ;
-      font-style: italic;
-      font-size:30px;
-      color: rgb(211, 97, 49);
-      text-align: center;
-}
-.carousel-inner img{
-      object-fit: cover;
-      width: 100%;
-}
-
