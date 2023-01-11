@@ -40,6 +40,10 @@
     color: white;
 }
 
+.navbar .dropdown-item:hover {
+    color: var(--primary-color);
+}
+
 .navbar .dropdown-item.active {
     font-weight: 600;
 }
