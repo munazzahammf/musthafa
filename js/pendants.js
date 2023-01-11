@@ -1,13 +1,13 @@
 const items = [
   {
-    "itemname": "Bangle (Stones)",
+    "itemname": "Pendant (Stones)",
     "filepath": "img/pendants/pendant 1.jpeg",
     "weight": "25.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Bangle (Stones)",
+    "itemname": "Awesome Pendant",
     "filepath": "img/pendants/pendant 2.jpeg",
     "weight": "18.5 g",
     "type": "22 Kt ･ Yellow Gold",
@@ -15,7 +15,7 @@ const items = [
 
   },
   {
-    "itemname": "Bangle (Stones)",
+    "itemname": "Awesome Pendant",
     "filepath": "img/pendants/pendant 3.jpeg",
     "weight": "44.5 g",
     "type": "22 Kt ･ White Gold",
@@ -23,21 +23,21 @@ const items = [
 
   },
   {
-    "itemname": "Bangle (Stones)",
+    "itemname": "Awesome Pendant",
     "filepath": "img/pendants/pendant 4.jpeg",
     "weight": "18.5 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Bangle (Stones)",
+    "itemname": "Awesome Pendant",
     "filepath": "img/pendants/pendant 5.jpeg",
     "weight": "18.5 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Bangle (Stones)",
+    "itemname": "Awesome Pendant",
     "filepath": "img/pendants/pendant 6.jpeg",
     "weight": "18.5 g",
     "type": "18 Kt ･ Yellow Gold",

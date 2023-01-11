@@ -1,13 +1,13 @@
 const rings = [
   {
-    "itemname": "Awesome ring",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 1.jpeg",
     "weight": "14.5",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 2.jpeg",
     "weight": "14.5 g",
     "type": "22 Kt ･ Yellow Gold",
@@ -15,35 +15,35 @@ const rings = [
 
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 3.jpeg",
     "weight": "10.4 g",
     "type": "22 Kt ･ White Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 5.jpeg",
     "weight": "12.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 6.jpeg",
     "weight": "16.8 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome ring",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 7.jpeg",
     "weight": "16.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 8.jpeg",
     "weight": "10.3 g",
     "type": "22 Kt ･ Yellow Gold",
@@ -51,42 +51,42 @@ const rings = [
 
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 9.jpeg",
     "weight": "6.6 g",
-    "type": "22 Kt ･ White Gold",
+    "type": "22 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 10.jpeg",
     "weight": "14.4 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 11.jpeg",
     "weight": "16.7 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 12.jpeg",
     "weight": "12.3 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome ring",
+    "itemname": "Awesome Ring",
     "filepath": "img/rings/ring 13.jpeg",
     "weight": "16.6 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 14.jpeg",
     "weight": "4.2 g",
     "type": "22 Kt ･ Yellow Gold",
@@ -94,21 +94,21 @@ const rings = [
 
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 15.jpeg",
     "weight": "6.1 g",
-    "type": "22 Kt ･ White Gold",
+    "type": "22 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 16.jpeg",
     "weight": "10.4 g",
     "type": "18 Kt ･ Yellow Gold",
     "liked": false
   },
   {
-    "itemname": "Awesome Earing",
+    "itemname": "Ring (Stones)",
     "filepath": "img/rings/ring 17.jpeg",
     "weight": "6.8 g",
     "type": "18 Kt ･ Yellow Gold",
