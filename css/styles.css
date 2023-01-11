@@ -20,6 +20,8 @@
       --text-color-light: hsl(var(--hue), 4%, 55%);
       --body-color: hsl(var(--hue), 0%, 100%);
       --container-color: #FFF;
+
+      --gradient-background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
 }
 
 h1,
@@ -35,115 +37,100 @@ body {
       font-weight: bold;
 }
 
+/* ======================== Section Carousel ======================== */
 
-
-/* Navigation bar*/
-.navbar {
-      background-color: var(--primary-color);
-      position: sticky;
-      top: 0;
-      height: 12vh;
-      max-height: 90px;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 999;
-      box-shadow: 0 0 20px -15px black;
-      color: white;
+.carousel {
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 90vh;
 }
 
-.navbar-nav {
-      color: var(--first-color);
+.carousel-item {
+      height: 90vh;
 }
 
-.nav-link {
-      color: white !important;
-}
-
-.navbar-brand {
-      height: 100%;
-}
-
-.navbar-brand img {
+.carousel-inner img {
       object-fit: contain;
       height: 100%;
+      object-position: 0px 0px;
 }
 
-.navbar .dropdown-item.active {
-      background-color: white;
-      color: black;
-      font-weight: 600;
+.carousel-caption {
+      top: 100px;
 }
 
-.logo {
-      width: 80px;
-      cursor: pointer;
+.carousel-caption h2 {
+      margin-top: 50px;
+      font-variant: small-caps;
+      font-family: 'Philosopher', sans-serif;
+      font-style: italic;
+      font-display: initial;
+      font-weight: 900;
+      text-shadow: #462010 0 -2px;
+      font-size: 80px;
+      color: #000000;
+      text-align: center;
 }
 
-.text-wrapper {
-      color: white;
+.carousel-caption p {
+      font-family: 'Philosopher', sans-serif;
+      font-style: italic;
+      font-size: 30px;
+      color: rgb(211, 97, 49);
+      text-align: center;
 }
 
-nav ul {
-      margin-bottom: 0;
+.carousel-blur {
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 }
 
-nav ul li {
-      list-style: none;
-      display: inline-block;
-      margin: 0 20px;
-      position: relative;
+/* ===== End of Section Carousel ===== */
+
+
+
+
+
+
+
+/* ===================== Section Image Gallery ===================== */
+
+.img-gallery {
+      height: 75vh;
 }
 
-nav ul li a {
-      text-decoration: none;
-      color: var(--primary-color);
-      text-transform: uppercase;
-      font-size: large;
-      font-weight: 1000px;
+.img-container {
+      height: 80%;
 }
 
-nav ul li::after {
-      content: '';
-      height: 3px;
-      width: 0;
-      background: white;
-      position: absolute;
-      left: 0;
-      bottom: -10px;
-      transition: 0.5s;
+.img-container>* {
+      padding-left: 2px !important;
+      padding-right: 2px !important;
 }
 
-nav ul li:hover::after {
+.img-row {
       width: 100%;
+      height: 50%;
 }
 
-.content {
+.img-gallery img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.img-row img {
       width: 100%;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: left;
-      color: wheat;
+      max-height: 100%;
+      object-fit: cover;
 }
 
-.content h6 {
-      margin: 20px auto;
-      font-weight: 100;
-      line-height: 50px;
-      font-size: 28px;
-}
+/* ===== End of Section Image Gallery ===== */
 
-.content h5 {
-      font-size: 45px;
-      margin-top: 80px;
-}
 
-nav>img {
-      height: 1rem;
-      padding: 0.3rem;
-}
+
+
+
+
+/* ================== Section Gallery of Jewellery ================== */
 
 h1.title-jewellery {
       text-align: center;
@@ -152,105 +139,16 @@ h1.title-jewellery {
       font-weight: 600;
 }
 
-.thumbnail {
-
-      background-color: var(--primary-color);
-      height: 800px;
-      border-style: double;
-      border-width: 5px;
-      border-color: var(--background-color);
-}
-
-.contact-box {
-      background: #e6e6e6;
-      display: flex;
-      color: var(--primary-color);
-
-}
-
-.input-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      column-gap: 1rem;
-}
-
-/* .input-row .input-group {
-      flex-basis: 45%;
-} */
-
-.input-row .input-group {
-      flex-direction: column;
-}
+/* ===== End of Section Gallery of Jewellery ===== */
 
 
-textarea {
-      width: 100%;
-      border: 1px solid var(--primary-color);
-      outline: none;
-      padding: 10px;
-      box-sizing: border-box;
-
-}
-
-label {
-      margin-bottom: 6px;
-      display: block;
-      color: var(--primary-color);
-}
-
-tr td:first-child {
-      padding-right: 20px;
-}
-
-tr td {
-      padding-top: 20px;
-}
-
-.item-name {
-      color: var(--background-color);
-}
-
-.price {
-      color: var(--background-color);
-}
-
-small {
-      color: antiquewhite;
-}
-
-/* Home page */
 
 
-/* Styling of Jewellery */
 
-.green-gradient {
-      background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
-}
 
-.tile-jewellery {
-      background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
-      border-radius: 15px;
-      border-top-right-radius: 0;
-      border-bottom-left-radius: 0;
-      border-width: 5px;
-}
 
-/* DStyling About us page */
-.about-us h1 {
-      text-align: center;
-      margin: 50px auto 100px;
-      color: var(--primary-color);
-}
 
-.main {
-      width: 90%;
-      min-height: 370px;
-      text-align: center;
-      position: relative;
-      cursor: pointer;
-}
-
+/* ======================= Section Our Services ======================= */
 .service {
       background: var(--primary-color);
       color: var(--secondary-color);
@@ -266,12 +164,14 @@ small {
 .service-logo {
       width: 120px;
       height: 120px;
-      border-style: solid;
-      border-color: var(--primary-color);
+      border: 3px solid var(--primary-color);
       border-radius: 50%;
       /* border: 10px solid var(--background-color); */
       margin: -90px auto 0;
       background: #e6e6e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
 
 .service-logo img {
@@ -289,29 +189,16 @@ small {
       position: relative;
 }
 
-/*
-.service h4::after {
-      content: '';
-      width: 40px;
-      height: 30px;
-      background: #84A59D;
-      position: absolute;
-      right: -5px;
-      top: -5px;
-      z-index: -1;
+.our-services .row {
+      margin-top: 170px;
 }
 
-.service h4::before {
-      content: '';
-      width: 40px;
-      height: 30px;
-      background: #84A59D;
-      position: absolute;
-      left: -5px;
-      bottom: -5px;
-      z-index: -1;
+.service-icon {
+      display: block;
+      font-size: 4rem;
+      color: var(--primary-color);
 }
-*/
+
 .shadow1 {
       height: 220px;
       width: 80%;
@@ -346,29 +233,77 @@ small {
 }
 
 
+/* ===== End of Section Our Services ===== */
 
-/* .contact-us {
-      padding-top: 20px;
-      background: var(--primary-color);
-      width: 50%;
-      margin: 3rem auto;
+
+
+
+
+
+
+
+
+/* ======================= Section Contact Us ======================= */
+
+/* Get in touch form */
+.input-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      column-gap: 1rem;
+}
+
+.input-row .input-group {
+      flex-direction: column;
+}
+
+
+textarea {
+      width: 100%;
+      border: 1px solid var(--primary-color);
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+
+}
+
+label {
+      margin-bottom: 6px;
+      display: block;
+      color: var(--primary-color);
+}
+
+.contact-us button {
+      background-image: var(--gradient-background);
+}
+
+.contact_control {
+      background: transparent;
       color: var(--secondary-color);
-} */
-
-
-
-/* Styling of Contact Us */
-.contact-list {
-      color: white;
-
+      border: white solid 1px !important;
+      border: inherit;
 }
 
-.highlight {
-      color: white;
+input.contact_control {
+      height: 3rem;
 }
 
-.container td {
-      color: rgb(179, 129, 3);
+/* Reach us via */
+
+tr td:first-child {
+      padding-right: 20px;
+}
+
+tr td {
+      padding-top: 20px;
+}
+
+.contact-us .container .col-8 {
+      background-color: var(--first-color-lighten);
+}
+
+.contact-us .container .col-4 {
+      background-color: var(--primary-color);
 }
 
 .social-icons a {
@@ -384,202 +319,30 @@ small {
 
 }
 
-.price small {
-      font-size: 0.7rem;
+.social-icons .fa {
       color: white;
 }
 
-.container-img .container-like-icon {
-      position: absolute;
+.container td {
+      color: rgb(179, 129, 3);
 }
 
-.container-like-icon:hover {
-      background-color: rgba(0, 0, 0, 0.4);
-}
-
-.contact_control {
-      background: transparent;
-      color: var(--secondary-color);
-      border: white solid 1px !important;
-      border: inherit;
-}
-
-input.contact_control {
-      height: 3rem;
-}
-
-.contact-us {
-      background-color: #84A59D;
-}
-
-.contact-us button {
-      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
-}
-
-.pt-5 button {
-      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
-}
-
-/* Styling of footer page */
-footer {
-      background-color: var(--primary-color);
-}
-
-.text-content h3 {
-      color: var(--secondary-color);
-      font-style: oblique;
-      font-size: x-large;
-}
-
-ul {
-      margin-bottom: 0;
-      padding-left: 0;
-      color: var(--secondary-color);
-}
-
-ul li {
-      list-style: none;
-}
-
-.input-container {
-      background-color: white;
-      padding: 0.5rem;
-      width: 100%;
-}
-
-.input-container input {
-      flex-grow: 2;
-      display: block;
-}
-
-.input-container button {
-      flex: 1;
-      flex-grow: 2;
-}
-
-footer {
-      color: white;
-}
-
-footer .credit-cards {
-      gap: 0.5rem;
-}
-
-footer img {
-      width: 35px;
-}
-
-/* Styling of services page */
-.our-services {
-      margin-left: 120px;
-      margin-right: 120px;
-}
-
-.service-logo {
-      overflow: hidden;
-}
-
-.service-logo-container img {
-      transform: scale(1.7);
-}
-
-.nav-breadcrumb {
-      height: 15rem;
-      font-size: larger;
-      background-image: url('../img/bangles/special.jpeg');
-      object-fit: cover;
-      background-position: center;
-}
-
-.input-container {
-      max-width: 400px;
-}
-
-.service-logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-}
-
-.our-services .row {
-      margin-top: 170px;
-}
-
-.service-icon {
-      display: block;
-      font-size: 4rem;
-      color: var(--primary-color);
-}
-
-.contact-us .container {
-      /* background-color: #6F233F; */
-}
-
-/* Section Carousel */
-.carousel {
-      background-color: rgba(0, 0, 0, 0.4);
-      height: 90vh;
-}
-
-.carousel-item {
-      height: 90vh;
-}
-
-.carousel-inner img {
-      object-fit: contain;
-      height: 100%;
-      object-position: 0px 0px;
-}
-
-.carousel-caption {
-      top: 100px;
-}
-
-.jewel-set h2 {
-      margin-top: 50px;
-      font-variant: small-caps;
-      font-family: 'Philosopher', sans-serif;
-      font-style: italic;
-      font-display: initial;
-      font-weight: 900;
-      text-shadow: #462010 0 -2px;
-      font-size: 80px;
-      color: #000000;
-      text-align: center;
-}
-
-.jewel-set p {
-      font-family: 'Philosopher', sans-serif;
-      font-style: italic;
-      font-size: 30px;
-      color: rgb(211, 97, 49);
-      text-align: center;
-}
-
-.container-img {
-      overflow: hidden;
-}
-
-.background-dark {
-      background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-      background-color: rgba(0, 0, 0, 0.4);
-}
-
-img[alt="jewellery image"] {
-      display: block;
-}
-
-img[alt="jewellery image"]:hover {
-      display: block;
-      transform: scale(1.07);
-      transition: 0.6s ease-in;
-}
+/* ===== End of Section Contact Us ===== */
 
 
-/* About Us container */
+
+
+
+
+
+
+
+
+/* ============================ Section about us ============================ */
 .about-us {
       margin-right: 200px;
       margin-left: 200px;
+      text-align: center;
 }
 
 .about-us-container {
@@ -606,70 +369,16 @@ img[alt="jewellery image"]:hover {
 .about-us h1 {
       font-variant: initial;
       font-size: xx-large;
+      text-align: center;
+      margin: 50px auto 100px;
+      color: var(--primary-color);
 }
 
-
-/*Section Image Gallery */
-.img-gallery {
-      height: 75vh;
+.main {
+      width: 90%;
+      min-height: 400px;
+      text-align: center;
+      position: relative;
 }
 
-.img-container {
-      height: 80%;
-}
-
-.img-container>* {
-      padding-left: 2px !important;
-      padding-right: 2px !important;
-}
-
-.img-row {
-      width: 100%;
-      height: 50%;
-}
-
-.img-gallery img {
-      max-width: 100%;
-      height: 100%;
-      object-fit: cover;
-}
-
-.img-row img {
-      width: 100%;
-      max-height: 100%;
-      object-fit: cover;
-}
-
-.img1 img {
-      width: 300px;
-      height: 300px;
-      margin-left: 180px;
-      margin-top: 100px;
-}
-
-.img2 img {
-      width: 300px;
-      height: 300px;
-      margin-left: 180px;
-}
-
-.img4 img {
-      width: 300px;
-      height: 385px;
-      margin-top: -410px;
-      margin-left: 870px;
-}
-
-.img5 img {
-      width: 300px;
-      height: 245px;
-      margin-left: 870px;
-      margin-top: -1025px;
-}
-
-.img6 img {
-      width: 390px;
-      height: 596px;
-      margin-left: 480px;
-      margin-top: -720px;
-}
+/* ===== End of Section About Us ===== */

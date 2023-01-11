@@ -23,3 +23,7 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
+
+.green-gradient {
+    background: var(--gradient-background);
+}

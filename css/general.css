@@ -1,0 +1,174 @@
+/* =============================== Section navbar ============================== */
+.navbar {
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    height: 12vh;
+    max-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    box-shadow: 0 0 20px -15px black;
+    color: white;
+}
+
+.navbar-nav {
+    color: var(--first-color);
+    gap: 2rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    height: 100%;
+}
+
+.navbar-brand img {
+    object-fit: contain;
+    height: 100%;
+}
+
+.navbar .dropdown-menu {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar .dropdown-item {
+    color: white;
+}
+
+.navbar .dropdown-item.active {
+    font-weight: 600;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 980px) {
+    .navbar-collapse {
+        background: var(--gradient-background);
+    }
+}
+
+/* =============================== Section Breadcrumb =============================== */
+.nav-breadcrumb {
+    height: 15rem;
+    font-size: larger;
+    object-fit: cover;
+    background-position: center;
+}
+
+
+/* =============================== Section Item card =============================== */
+.container-img {
+    overflow: hidden;
+}
+
+img[alt="jewellery image"]:hover {
+    display: block;
+    transform: scale(1.07);
+    transition: 0.6s ease-in;
+}
+
+.container-img .container-like-icon {
+    position: absolute;
+}
+
+.tile-jewellery {
+    background: var(--gradient-background);
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: 5px;
+}
+
+.item-name {
+    color: var(--background-color);
+}
+
+.price {
+    color: var(--background-color);
+}
+
+.price small {
+    font-size: 0.7rem;
+    color: white;
+}
+
+/* ===== End of Item Card ===== */
+
+/* ================================== Section footer ============================== */
+footer {
+    background-color: var(--primary-color);
+}
+
+.text-content h3 {
+    color: var(--secondary-color);
+    font-style: oblique;
+    font-size: x-large;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    color: var(--secondary-color);
+}
+
+ul li {
+    list-style: none;
+}
+
+.input-container {
+    background-color: white;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.input-container input {
+    flex-grow: 2;
+    display: block;
+}
+
+.input-container button {
+    flex: 1;
+    flex-grow: 2;
+}
+
+footer {
+    color: white;
+}
+
+footer .credit-cards {
+    gap: 0.5rem;
+}
+
+footer img {
+    width: 35px;
+}
+
+footer .input-container {
+    max-width: 400px;
+}
+
+footer button {
+    background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
+}
