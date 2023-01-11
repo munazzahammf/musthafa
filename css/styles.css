@@ -531,6 +531,7 @@ footer img {
 .carousel-inner img {
       object-fit: contain;
       height: 100%;
+      width: fit-content;
       object-position: 0px 0px;
 }
 
