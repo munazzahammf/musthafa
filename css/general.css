@@ -3,7 +3,7 @@
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
-    height: 12vh;
+    height: 10vh;
     max-height: 90px;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@
 }
 
 .navbar .dropdown-menu {
-    background-color: transparent;
+    background: var(--gradient-background);
     border: none;
 }
 
@@ -66,6 +66,11 @@ nav ul li:hover::after {
 @media screen and (max-width: 980px) {
     .navbar-collapse {
         background: var(--gradient-background);
+    }
+
+    .navbar .dropdown-menu {
+        background-color: transparent;
+        border: none;
     }
 }
 

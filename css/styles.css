@@ -50,7 +50,7 @@ body {
 
 .carousel-inner img {
       object-fit: contain;
-      height: 100%;
+      width: 100%;
       object-position: 0px 0px;
 }
 
@@ -67,7 +67,7 @@ body {
       font-weight: 900;
       text-shadow: #462010 0 -2px;
       font-size: 80px;
-      color: #000000;
+      color: var(--primary-color);
       text-align: center;
 }
 
@@ -75,7 +75,7 @@ body {
       font-family: 'Philosopher', sans-serif;
       font-style: italic;
       font-size: 30px;
-      color: rgb(211, 97, 49);
+      color: var(--primary-color);
       text-align: center;
 }
 
@@ -94,7 +94,7 @@ body {
 /* ===================== Section Image Gallery ===================== */
 
 .img-gallery {
-      height: 75vh;
+      height: 90vh;
 }
 
 .img-container {
@@ -112,8 +112,8 @@ body {
 }
 
 .img-gallery img {
-      max-width: 100%;
-      height: 100%;
+      width: 100%;
+      max-height: 100%;
       object-fit: cover;
 }
 
@@ -246,6 +246,11 @@ h1.title-jewellery {
 /* ======================= Section Contact Us ======================= */
 
 /* Get in touch form */
+.contact-us .container .col-8 {
+      background-color: #84a59d;
+      padding: 3rem;
+}
+
 .input-row {
       display: flex;
       justify-content: space-between;
@@ -274,36 +279,18 @@ label {
 }
 
 .contact-us button {
-      background-image: var(--gradient-background);
+      background-image: var(--primary-color);
 }
 
 .contact_control {
       background: transparent;
       color: var(--secondary-color);
-      border: white solid 1px !important;
+      border: 2px solid white !important;
       border: inherit;
 }
 
 input.contact_control {
       height: 3rem;
-}
-
-/* Reach us via */
-
-tr td:first-child {
-      padding-right: 20px;
-}
-
-tr td {
-      padding-top: 20px;
-}
-
-.contact-us .container .col-8 {
-      background-color: var(--first-color-lighten);
-}
-
-.contact-us .container .col-4 {
-      background-color: var(--primary-color);
 }
 
 .social-icons a {
@@ -313,8 +300,8 @@ tr td {
       width: 3rem;
       height: 3rem;
       margin: 0.5rem;
-      color: white;
-      background-image: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
+      color: var(--primary-color);
+      background: var(--white);
       border-radius: 15px;
 
 }
@@ -323,8 +310,27 @@ tr td {
       color: white;
 }
 
+/* Reach us via */
+.contact-us div p {
+      color: var(--secondary-color);
+}
+
+tr td:first-child {
+      padding-right: 20px;
+}
+
+tr td {
+      padding-top: 20px;
+}
+
+.contact-us .container .col-4 {
+      background-color: var(--primary-color);
+}
+
+
+
 .container td {
-      color: rgb(179, 129, 3);
+      color: white;
 }
 
 /* ===== End of Section Contact Us ===== */
