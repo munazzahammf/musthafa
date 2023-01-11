@@ -93,18 +93,6 @@ a:active {
       cursor: pointer;
 }
 
-.border-box1 {
-
-      position: absolute;
-      padding-left: 0 3rem;
-      width: 650px;
-      height: 600px;
-      margin: 50px auto;
-      border-style: double;
-      border-color: var(--background-color);
-      border-width: 20px;
-}
-
 .text-wrapper {
       color: white;
 }
