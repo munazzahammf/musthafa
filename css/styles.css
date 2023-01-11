@@ -368,7 +368,10 @@ small {
 }
 
 .container td {
-      color: rgb(179, 129, 3);
+      color:whitesmoke;
+}
+.contact-us .fa-solid{
+      color: var(--primary-color);
 }
 
 .social-icons a {
@@ -541,18 +544,20 @@ footer img {
       font-family: 'Philosopher', sans-serif;
       font-style: italic;
       font-display: initial;
-      font-weight: 900;
-      text-shadow: #462010 0 -2px;
+      font-weight: 1000;
+      text-shadow: #84A59D -2px -2px;
+      color:var(--primary-color);
       font-size: 80px;
-      color: #000000;
       text-align: center;
 }
 
 .jewel-set p {
       font-family: 'Philosopher', sans-serif;
       font-style: italic;
+      text-shadow: #84A59D -2px -2px;
+      color:var(--primary-color);
       font-size: 30px;
-      color: rgb(211, 97, 49);
+      
       text-align: center;
 }
 
@@ -562,7 +567,6 @@ footer img {
 
 .background-dark {
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-      background-color: rgba(0, 0, 0, 0.4);
 }
 
 img[alt="jewellery image"] {
