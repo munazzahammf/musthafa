@@ -12,7 +12,6 @@ const rings = [
     "weight": "14.5 g",
     "type": "22 Kt ･ Yellow Gold",
     "liked": false
-
   },
   {
     "itemname": "Ring (Stones)",
@@ -117,26 +116,22 @@ const rings = [
 ]
 
 
-function initializeRingWindow() {
+const ring_container = document.querySelector("#ring-container")
 
-  const ring_container = document.querySelector("#ring-container")
+let total = 4
 
-  ring_container.innerHTML = ""
-
-  let total = 4
-
-  if (window.location.pathname === '/rings.html') {
-    total = rings.length
-  }
+if (window.location.pathname === '/rings.html') {
+  total = rings.length
+}
 
 
-  for (let i = 0; i < total; i++) {
+for (let i = 0; i < total; i++) {
 
-    const ring = rings[i]
+  const ring = rings[i]
 
 
-    ring_container.innerHTML +=
-      `<div class="col-lg-3 col-md-4 col-sm-6 pb-3">
+  ring_container.innerHTML +=
+    `<div class="col-lg-3 col-md-4 col-sm-6 pb-3">
             <div class="tile-jewellery py-3 px-2">
               <div class="container-img position-relative mb-3" style="min-height: 250px">
                 <img src="${ring.filepath}" alt="jewellery image" style="object-fit: cover"
@@ -153,9 +148,6 @@ function initializeRingWindow() {
               </div>
             </div>
           </div>`
-  }
 }
-
-initializeRingWindow()
 
 

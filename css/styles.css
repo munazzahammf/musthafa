@@ -21,7 +21,7 @@
       --body-color: hsl(var(--hue), 0%, 100%);
       --container-color: #FFF;
 
-      --gradient-background: linear-gradient(to right, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
+      --gradient-background: linear-gradient(375deg, rgb(12, 94, 63), rgb(13, 132, 100), rgb(23, 141, 110));
 }
 
 h1,
@@ -55,28 +55,25 @@ body {
 }
 
 .carousel-caption {
-      top: 100px;
+      top: 150px;
+}
+
+.carousel-caption {
+      font-family: 'Philosopher', sans-serif;
+      font-style: italic;
+      text-shadow: #84a59d -2px -2px;
+      text-align: center;
+      color: var(--primary-color);
 }
 
 .carousel-caption h2 {
-      margin-top: 50px;
       font-variant: small-caps;
-      font-family: 'Philosopher', sans-serif;
-      font-style: italic;
-      font-display: initial;
       font-weight: 900;
-      text-shadow: #462010 0 -2px;
       font-size: 80px;
-      color: var(--primary-color);
-      text-align: center;
 }
 
 .carousel-caption p {
-      font-family: 'Philosopher', sans-serif;
-      font-style: italic;
       font-size: 30px;
-      color: var(--primary-color);
-      text-align: center;
 }
 
 .carousel-blur {
@@ -112,8 +109,8 @@ body {
 }
 
 .img-gallery img {
-      width: 100%;
-      max-height: 100%;
+      height: 100%;
+      max-width: 100%;
       object-fit: cover;
 }
 
@@ -121,6 +118,22 @@ body {
       width: 100%;
       max-height: 100%;
       object-fit: cover;
+}
+
+.img-gallery .hover-text {
+      opacity: 0.1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.img-gallery .hover-text:hover {
+      opacity: 0.7;
+      transition: 0.5s ease-out;
+}
+
+.img-gallery .hover-text h1 {
+      color: white;
 }
 
 /* ===== End of Section Image Gallery ===== */
@@ -246,7 +259,7 @@ h1.title-jewellery {
 /* ======================= Section Contact Us ======================= */
 
 /* Get in touch form */
-.contact-us .container .col-8 {
+.contact-us .container .contact-form {
       background-color: #84a59d;
       padding: 3rem;
 }
@@ -323,7 +336,7 @@ tr td {
       padding-top: 20px;
 }
 
-.contact-us .container .col-4 {
+.contact-us .container .contact-data {
       background-color: var(--primary-color);
 }
 

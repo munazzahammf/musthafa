@@ -11,13 +11,15 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="shortcut icon" href="title-logo.png" type="image/x-icon">
+  <link rel="icon" href="title-logo.png" type="image/x-icon">
 
   <title>Musthafa - Home</title>
 
 
   <!-- Custom Style Sheets -->
   <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -46,16 +48,17 @@
             <a class="dropdown-item" href="rings.html">Rings</a>
             <a class="dropdown-item" href="necklaces.html">Necklaces</a>
             <a class="dropdown-item" href="pendants.html">Pendants</a>
+            <a class="dropdown-item" href="earings.html">Earings</a>
           </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#our-services">OUR SERVICES</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#about-us">ABOUT US</a>
+          <a class="nav-link" href="index.html#contact-us">CONTACT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#contact-us">CONTACT US</a>
+          <a class="nav-link" href="index.html#about-us">ABOUT US</a>
         </li>
       </ul>
     </div>
@@ -88,22 +91,38 @@
   <section class="img-gallery">
     <div class="container m-auto row img-container h-100 px-5">
       <div class="col-md-4 h-100 d-flex flex-column">
-        <div class="img-row pb-1">
+        <div class="img-row pb-1 position-relative">
           <img src="img/special/img1.jpg" alt="">
+          <div class="hover-text bg-dark position-absolute w-100 h-100 top-0">
+            <h1>Necklaces</h1>
+          </div>
         </div>
-        <div class="img-row">
+        <div class="img-row position-relative">
           <img src="img/special/img2.jpg" alt="">
+          <div class="hover-text bg-dark position-absolute w-100 h-100 top-0">
+            <h1>Earings</h1>
+          </div>
         </div>
       </div>
-      <div class="col-4 h-100">
-        <img src="img/special/img7.jpg" alt="">
+      <div class="col-4 h-100 position-relative">
+        <img src="img/special/img3.jpg" alt="">
+        <div class="hover-text bg-dark position-absolute w-100 h-100 top-0">
+          <h1>Bangles</h1>
+        </div>
       </div>
       <div class="col-4 h-100 d-flex flex-column">
-        <div class="img-row pb-1">
+        <div class="img-row pb-1 position-relative">
           <img src="img/special/img4.jpg" alt="">
+          <div class="hover-text bg-dark position-absolute w-100 h-100 top-0">
+            <h1>Chains</h1>
+          </div>
         </div>
-        <div class="img-row">
+        <div class="img-row position-relative">
           <img src="img/special/img5.jpg" alt="">
+          <div class="hover-text bg-dark position-absolute w-100 h-100 top-0">
+            <h1>Rings</h1>
+          </div>
+
         </div>
       </div>
     </div>
@@ -114,9 +133,7 @@
 
   <!-- Section Jewellery -->
   <section id="jewellery">
-    <h3 class="title-jewellery text-center">GALLERY OF JEWELLERY</h3> <br>
-
-
+    <h3 class="title-jewellery text-center">GALLERY OF JEWELLERY</h3>
     <div class="container mt-5">
       <div class="d-flex justify-content-between align-items-center pb-4">
         <h3>Rings</h3>
@@ -155,6 +172,16 @@
         </a>
       </div>
       <div class="row" id="pendants-container"></div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between align-items-center pb-4">
+        <h3>Earings</h3>
+        <a href="earings.html">
+          <button id="bangle-button">See More...</button>
+        </a>
+      </div>
+      <div class="row" id="earing-container"></div>
     </div>
 
 
@@ -233,14 +260,12 @@
   </section>
 
 
-  <br>
-  <br>
   <!-- Section Contact Us -->
   <section class="contact-us" id="contact-us">
     <h3 class="text-center">CONTACT US</h3>
-    <div class="container p-5">
+    <div class="container p-xl-5">
       <div class="row">
-        <div class="col-8">
+        <div class="contact-form col-xl-7 col-6">
           <h3>Get in touch</h3>
           <form>
             <div class="input-row">
@@ -277,7 +302,7 @@
             </button>
           </form>
         </div>
-        <div class="col-4 px-5">
+        <div class="contact-data col-6 col-xl-5 px-5">
           <div>
             <h3 class="pb-1">Reach Us Via</h3>
             <p>Contact us for any inquiries or to schedule a visit to our shop. We would be happy to assist you in
@@ -436,5 +461,6 @@
   <script src="js/bangles.js"></script>
   <script src="js/necklaces.js"></script>
   <script src="js/pendants.js"></script>
+  <script src="js/earing.js"></script>
 </body>
 </html>

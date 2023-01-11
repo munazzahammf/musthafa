@@ -91,7 +91,7 @@ nav ul li:hover::after {
 img[alt="jewellery image"]:hover {
     display: block;
     transform: scale(1.07);
-    transition: 0.6s ease-in;
+    transition: 0.6s ease-out;
 }
 
 .container-img .container-like-icon {
