@@ -16,23 +16,24 @@
 
 
     <!-- Custom Style Sheets -->
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg px-5 navbar-light green-gradient text-white align-items-center ">
-        <a class="navbar-brand p-0" href="#">
+    <nav class="navbar navbar-expand-lg navbar-light green-gradient text-white align-items-center ">
+        <a class="navbar-brand px-5 p-1" href="#">
             <img src="logo.png" alt="">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        <button class="navbar-toggler mx-5" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <div class="collapse px-5 navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link active" href="/">Home</a>
+                    <a class="nav-link active" href="/">HOME</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -75,6 +76,48 @@
             <div class="row" id="ring-container"></div>
         </div>
     </section>
+
+    <footer class="pt-5 px-3 pb-3">
+        <div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="text-content px-2">
+                        <h3 class="mb-3">Subscribe to our newsletter to stay updated</h3>
+                        <div class="input-container d-flex align-items-center justify-content-between">
+                            <input placeholder="Enter your email" class="w-50" type="email" name="email" id="email">
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="text-content px-2">
+                        <h3>Our Address</h3>
+                        <p>No: 99, Bazaar Street,<br>Chilaw. <br>61000</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="text-content px-2">
+                        <h3>Contact Us</h3>
+                        <p>
+                            <a href="tel:+94-77882-4678">+94778824678</a>
+                            <br>
+                            <a href="mailto:musthafajewellers@example.com">musthafajewellers@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="text-content px-2">
+                        <h3>We accept all credit cards</h3>
+                        <div class="credit-cards d-flex">
+                            <img src="img/cards/card1.png" alt="">
+                            <img src="img/cards/card2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col m-auto w-50 text-center">&copy; Musthafa Jewellers. All rights reserved.</div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
